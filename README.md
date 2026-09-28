@@ -35,16 +35,8 @@ python3 compose_diet.py
 
 ---
 
-## 🤝 Contributing
-
-We welcome advanced architectural optimization ideas! Want to add automated memory limitations capping middleware triggers, environment overrides, or Pytest integration suites wrappers?
-
-1. Fork this Repository
-2. Implement your features or extensions additions inside `compose_diet.py`
-3. Commit optimizations safely (`git commit -m 'Add custom dynamic hardware memory limits injection functionality'`)
-4. Push upstream (`git push origin feature/AmazingOptimization`)
-5. File a clean Pull Request
-
 ## 📝 License
 
 Distributed under the MIT License. See `LICENSE` for more architectural details.
+
+(ok, sorry for the long readme, time to make your Duolingo lesson boy)
