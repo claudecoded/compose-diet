@@ -27,34 +27,6 @@ python3 compose_diet.py
 
 ---
 
-## 📐 Dependency Trimming Graph Flow
-
-Compose-Diet parses your topological configuration tree structure dynamically and flags inactive pipelines.
-
-```mermaid
-graph TD
-    A[📂 Read docker-compose.yml] --> B[🔍 Run Native Structural Regex Parser]
-    B --> C[💻 Render Interative CLI Service Menu]
-    C --> D[🖱️ Dev selects focused service e.g. front-end]
-    
-    D --> E[🧠 Recursive Dependency Tree Walk]
-    E --> F{Is service part of target dependencies chain?}
-    
-    F -- Yes --> G[✅ Mark as Essential / Preserved]
-    F -- No --> H[✂️ Crop out from target runtime manifest output]
-    
-    G --> I[📝 Compile isolated docker-compose.diet.yml]
-    H --> I
-
-    style A fill:#1f232a,stroke:#38bdf8,stroke-width:1px,color:#fff
-    style D fill:#1f232a,stroke:#34d399,stroke-width:1px,color:#fff
-    style F fill:#1f232a,stroke:#fbbf24,stroke-width:2px,color:#fff
-    style H fill:#1f232a,stroke:#f87171,stroke-width:1px,color:#fff
-    style I fill:#1f232a,stroke:#a855f7,stroke-width:2px,color:#fff
-```
-
----
-
 ## 💎 Superpowers Included
 
 * **Zero-Dependency Architecture:** Written entirely leveraging native core Python libraries. No external heavy PyYAML modules compilation required. It parses layouts cleanly and instantly via file streams arrays.
